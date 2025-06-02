@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class ObjectDropDK : MonoBehaviour
 {
     public PlayerMovementDK abc;
-
+    
     private void OnTriggerStay2D(Collider2D collision)
     {
         abc.canDropObject = true;
