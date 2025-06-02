@@ -13,6 +13,7 @@ public class PlayerMovementDK : MonoBehaviour
     [SerializeField] private GameObject goal;
     public bool canMoveObject;
     public bool canDropObject;
+    public bool objectPlaced;
 
     public float speed = 5f;
 
@@ -52,6 +53,7 @@ public class PlayerMovementDK : MonoBehaviour
         { 
             item.transform.parent = this.transform;
             item.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z);
+            objectPlaced = false;
         }
     }
     
@@ -61,6 +63,7 @@ public class PlayerMovementDK : MonoBehaviour
         {
             item.transform.SetParent(null);
             item.transform.position = new Vector3(goal.transform.position.x, goal.transform.position.y + 0.5f, goal.transform.position.z);
+            objectPlaced = true;
         }
     }
 }
