@@ -3,7 +3,11 @@ using UnityEngine;
 public class DangerZoneDK : MonoBehaviour
 {
     public HealthDropDK healthBarRef;
-    public PlayerMovementDK playerRef;
+
+    
+
+    public PlayerObjectInteractionDK playerRef;
+
     public float zoneDmg = 0.05f;
 
     private bool playerInside = false;
