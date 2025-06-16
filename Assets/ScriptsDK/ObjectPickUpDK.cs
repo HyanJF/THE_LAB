@@ -3,15 +3,15 @@ using UnityEngine.InputSystem;
 
 public class ObjectPickUpDK : MonoBehaviour
 {
-    public PlayerMovementDK abc;
+    public PlayerObjectInteractionDK playerRef;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        abc.canMoveObject = true;
+        playerRef.canMoveObject = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        abc.canMoveObject = false;
+        playerRef.canMoveObject = false;
     }
 }

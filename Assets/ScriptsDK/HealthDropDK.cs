@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class HealthDropDK : MonoBehaviour
 {
     public Image healthBar;
-    public PlayerMovementDK player;
+    public PlayerObjectInteractionDK player;
     public float dmg = 0.01f;
 
     void Update()
