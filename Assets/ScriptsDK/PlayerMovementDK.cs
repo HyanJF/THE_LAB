@@ -3,8 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementDK : MonoBehaviour
 {
+
     private PlayerInput playerInput;
     private InputAction moveAction;
+
     public float speed = 5f;
 
     private void Start()
