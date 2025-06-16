@@ -3,20 +3,16 @@ using UnityEngine;
 public class DangerZoneDK : MonoBehaviour
 {
     public HealthDropDK healthBarRef;
-    public PlayerObjectInteractionDK playerRef;
     public float zoneDmg = 0.05f;
 
     private bool playerInside = false;
 
     private void Update()
     {
-        if (!playerRef.objectPlaced)
+        if (playerInside)
         {
-            if (playerInside)
-            {
-                healthBarRef.healthBar.fillAmount += zoneDmg * Time.deltaTime;
-                Debug.Log("Room took damage");
-            }
+            healthBarRef.healthBar.fillAmount += zoneDmg * Time.deltaTime;
+            Debug.Log("Room took damage");
         }
     }
 
