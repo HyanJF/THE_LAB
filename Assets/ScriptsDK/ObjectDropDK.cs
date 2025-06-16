@@ -3,15 +3,15 @@ using UnityEngine.InputSystem;
 
 public class ObjectDropDK : MonoBehaviour
 {
-    public PlayerObjectInteractionDK playerRef;
+    public PlayerMovementDK abc;
     
     private void OnTriggerStay2D(Collider2D collision)
     {
-        playerRef.canDropObject = true;
+        abc.canDropObject = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        playerRef.canDropObject = false;
+        abc.canDropObject = false;
     }
 }
