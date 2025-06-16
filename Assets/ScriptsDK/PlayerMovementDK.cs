@@ -14,7 +14,7 @@ public class PlayerMovementDK : MonoBehaviour
     public bool canMoveObject;
     public bool canDropObject;
     public bool objectPlaced;
-
+    
     public float speed = 5f;
 
     private void Start()
